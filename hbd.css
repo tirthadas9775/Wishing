@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Tourney:wght@200&display=swap');
+
+*{ margin: 0px;
+padding: 0px;
+font-family: sans-serif;
+background: #060c21;
+/*background-image:linear-gradient(45deg, #0f2027, #203a43, #2c5364);*/
+  box-sizing: border-box;
+
+}
+section{
+  position: relative;
+  height: 100vh;
+  width:100vw;
+  text-align: center;
+  align-items: center;
+    background-image: url('sky_2.gif');
+    background-size: cover;
+}
+.main{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  justify-content: center;
+
+}
+html{ scroll-behavior: smooth;}
+
+ .box{
+  position:absolute;
+  left: 50%;
+  top:20%;
+  height:20px;
+  background:none;
+  transform: translate(-50%,-50%);
+  padding: 15px;
+
+}
+
+.box h1{
+ font-family: 'Changa', sans-serif;
+ color:gainsboro;
+ margin: 0 auto;
+ left: 50%;
+ text-align: center;
+ white-space: nowrap;
+ text-transform: uppercase;
+font-weight: 50;
+overflow: hidden;
+background: none;
+padding-bottom: 10%;
+animation: text 2s steps(14) alternate;
+}
+@keyframes text {
+  0%{
+    width: 0ch;
+  }
+  100%{
+    width: 14ch;
+  }
+}
+.wish{
+  position: absolute;
+top: 65%;
+left:50%;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  font-family: 'Satisfy', cursive;
+font-size: 24px;
+background: none;
+color:#87cefa;
+ani
+}
+
+h2{
+ position:absolute;
+ font-size: 40px;
+ padding-top: 80px;
+ background: none;
+ color:#00fa9a;
+ top:35%;
+ left:50%;
+font-family: 'Acme', sans-serif;
+ transform: translate(-50%,-50%);
+ visibility: hidden;
+ animation: coming 2s forwards;
+ animation-delay: 2.2s;
+}
+@keyframes coming {
+  0%{ visibility: hidden;}
+  100%{visibility: visible;}
+
+}
+h2::after,h2::before{
+  content: "Nayeem Uddin";
+ position:absolute;
+ display:block;
+ font-size: 35px;
+  font-family: 'Abril Fatface', cursive;
+ white-space: nowrap;
+ left:-48%;
+ top:59%;
+ color: #db7093;
+ background: #060c21;
+ width: 225px;
+ height:50px;
+ display:block;
+ opacity:1;
+ visibility: hidden;
+ border-radius: 3px;
+ animation: L 2s forwards;
+ animation-delay: 2s;
+}
+h2::before{
+  content: "";
+}
+@keyframes L {
+  0%{top:59%; visibility: hidden;}
+  100%{top:10%;visibility: visible;}
+}
+
+
+.date,.date_2{
+  background: none;
+  position: relative;
+font-family: 'Tourney', cursive;
+  font-size: 35px;
+  top:20%;
+  padding-right: 12px;
+  display: inline-block;
+  color: white;
+  font-weight: 100;
+}
+.date_2{
+  top:30%;
+  color:#26A2BF;
+    font-size: 35px;
+    font-weight: 200;
+background: none;
+  font-family: 'Satisfy', cursive;
+  margin-bottom: 12px;
+}
+a {
+  position: absolute;
+  top:90%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 2px solid white;
+  padding: 7px 20px;
+  text-decoration: none;
+ font-family: 'Changa', sans-serif;
+background:#afeeee;
+color: #060c21;
+font-size: 20px;
+white-space: nowrap;
+transition: transform .4s ease;
+animation: glow 2s infinite;
+}
+a:hover{
+  letter-spacing: 1px;
+}
+@keyframes glow {
+0%{
+  background: #00bbff;
+  box-shadow: 0 0 10px #2196f3,0 0 15px #2196f3,0 0 20px #2196f3;
+}
+50%{
+  background:#afeeee;
+}
+100%{
+  background: #00bbff;
+  box-shadow: 0 0 10px #2196f3,0 0 15px #2196f3,0 0 20px #2196f3;
+}
+}
+
+
+@media only screen and (max-width:412px){
+
+.box{ width:90vw;
+height:350px;
+top:20%;}
+.box h1{
+  font-size: 30px;
+}
+
+}
+@media only screen and (max-width:1000px){
+
+.box{ height: 75vh; top:50%;}
+}
+@media only screen and (min-width:1000px){
+
+.box{ height: 75vh; top:45%;}
+}
