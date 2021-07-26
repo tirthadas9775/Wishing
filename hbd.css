@@ -69,11 +69,19 @@ left:50%;
   transform: translate(-50%,-50%);
   font-family: 'Satisfy', cursive;
 font-size: 30px;
+padding: 7px;
 background: none;
 color:#87cefa;
-ani
+animation: entrance 2s forwards;
+animation-iteration-count: infinite;
+animation-delay: 3s;
+visibility: hidden;
 }
-
+@keyframes entrance {
+  0%{ visibility: hidden;}
+  50%{ visibility: visible; border:2px solid black; }
+  100%{ visibility: visible;border: none;}
+}
 h2{
  position:absolute;
  font-size: 40px;
