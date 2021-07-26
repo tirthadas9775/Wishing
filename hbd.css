@@ -51,7 +51,7 @@ font-weight: 50;
 overflow: hidden;
 background: none;
 padding-bottom: 10%;
-animation: text 2s steps(14) alternate;
+animation: text 2s steps(14) infinite alternate;
 }
 @keyframes text {
   0%{
