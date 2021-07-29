@@ -16,7 +16,7 @@ section{
   width:100vw;
   text-align: center;
   align-items: center;
-    background-image: url('sky_2.gif');
+background-image: linear-gradient(to right top, #4143b1, #4957bd, #536ac8, #607cd3, #6f8fdc, #6597da, #5f9dd7, #60a3d2, #4e9ebf, #4797aa, #498f95, #4f8682);
     background-size: cover;
 }
 .main{
@@ -61,27 +61,68 @@ animation: text 2s steps(14) infinite alternate;
     width: 14ch;
   }
 }
-.wish{
-  position: absolute;
-top: 65%;
-left:50%;
+#wish{
+  z-index: 3;
+  position:absolute;
+  top: 25%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width:300px;
+    height:220px;
+display:none;
+transform: translate-(-50%,-50%);
+background-image: linear-gradient(45deg, #0f2027, #203a43, #2c5364);
+border:2.5px solid  #203a43;
+border-radius: 5px;
+padding: 2px;
   text-align: center;
+color:white;
+}
+#wish .message{
+  position: absolute;
+  background: none;
+  top:35%;
+  left: 50%;
   transform: translate(-50%,-50%);
   font-family: 'Satisfy', cursive;
-font-size: 30px;
-padding: 7px;
-background: none;
-color:#87cefa;
-animation: entrance 2s forwards;
-animation-iteration-count: infinite;
-animation-delay: 3s;
-visibility: hidden;
+font-size: 20px;
+z-index: 3;
 }
-@keyframes entrance {
-  0%{ visibility: hidden;}
-  50%{ visibility: visible; border:2px solid black; }
-  100%{ visibility: visible;border: none;}
+
+#wish button{
+  position: relative;
+  top:80%;
+  display: inline-block;
+  border: 2px solid gray;
+  padding: 5px;
+  white-space: nowrap;
+    text-align: center;
+  width:100px;
+  z-index: 3;
+  color: #060c21;
+   font-family: 'Acme', sans-serif;
+   cursor: pointer;
+   outline: none;
+   animation: glow 2s infinite;
 }
+
+button:hover{
+  scale:1.1;
+}
+@keyframes animate {
+  0%{
+    left:0;
+  }
+  10%{
+    left:90%;
+  }
+20%{ left:90%;opacity: 0;}
+100%{left:90%;opacity: 0;}
+}
+
+
 h2{
  position:absolute;
  font-size: 40px;
@@ -108,7 +149,7 @@ h2::after,h2::before{
  font-size: 35px;
   font-family: 'Abril Fatface', cursive;
  white-space: nowrap;
- left:-48%;
+ left:-100%;
  top:59%;
  color: #db7093;
  background: #060c21;
@@ -135,16 +176,18 @@ h2::before{
   position: relative;
 font-family: 'Tourney', cursive;
   font-size: 35px;
-  top:20%;
+  top: 20%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
   padding-right: 12px;
   display: inline-block;
-  color: white;
+  color: #060c21;
   font-weight: 100;
 }
 .date_2{
   top:30%;
-  color:#26A2BF;
-    font-size: 35px;
+  color:#060c21;    font-size: 35px;
     font-weight: 200;
 background: none;
   font-family: 'Satisfy', cursive;
@@ -159,12 +202,24 @@ a {
   padding: 7px 20px;
   text-decoration: none;
  font-family: 'Changa', sans-serif;
-background:#afeeee;
-color: #060c21;
+background: #060c21;
+color: white;
 font-size: 20px;
 white-space: nowrap;
 transition: transform .4s ease;
-animation: glow 2s infinite;
+}
+a::before{
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top:0;
+  left:0;
+  width:15px;
+  height:54px;
+  background-color: white;
+animation: animate 3s ease infinite ;
+border-radius: 3px;
+opacity: .3;
 }
 a:hover{
   letter-spacing: 1px;
@@ -183,7 +238,9 @@ a:hover{
 }
 }
 
-
+/*----------*/
+/* Media Queries*/
+/*---------*/
 @media only screen and (max-width:412px){
 
 .box{ width:90vw;
