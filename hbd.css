@@ -69,7 +69,7 @@ animation: text 2s steps(14) infinite alternate;
     left: 0;
     right: 0;
     margin: auto;
-    width:300px;
+    width:250px;
     height:220px;
 display:none;
 transform: translate-(-50%,-50%);
@@ -79,6 +79,13 @@ border-radius: 5px;
 padding: 2px;
   text-align: center;
 color:white;
+animation: wish 2s ;
+animation-timing-function: cubic-bezier(0.49, 0.47, 0.05, 1.15);
+}
+@keyframes wish {
+0%{scale:0;}
+          100%{scale:1;}
+
 }
 #wish .message{
   position: absolute;
