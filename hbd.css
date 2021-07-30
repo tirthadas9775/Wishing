@@ -79,11 +79,7 @@ border-radius: 5px;
 padding: 2px;
   text-align: center;
 color:white;
-animation: wish 2s ;
 }
-@keyframes wish {
-0%{scale:0;}
-          100%{scale:1;}
 
 }
 #wish .message{
