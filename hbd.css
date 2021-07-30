@@ -80,7 +80,6 @@ padding: 2px;
   text-align: center;
 color:white;
 animation: wish 2s ;
-animation-timing-function: cubic-bezier(0.49, 0.47, 0.05, 1.15);
 }
 @keyframes wish {
 0%{scale:0;}
