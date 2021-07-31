@@ -1,70 +1,75 @@
 <!DOCTYPE html>
-  <html>
+<html>
+
 <head>
-  <meta charset="utf-8">
-  <meta author="Muhammad Nayeem Uddin">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="hbd.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Happy Birthday</title>
-   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-   </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-   <script type="text/javascript">
-   function myFunc(msg,gfg) {
-   var confirmBox=$("#wish");
-   /*terrace message*/
-   confirmBox.find(".message").text(msg);
-   /*function*/
-   // Hiding
-   confirmBox.find(".yes").unbind().click(
-     function(){
-       confirmBox.hide();
-         window.scrollTo({ top:892, behavior: "smooth" });
-     })
+    <meta charset="utf-8">
+    <meta author="Muhammad Nayeem Uddin">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="hbd.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        function myFunc(msg, gfg) {
+            var confirmBox = $("#wish");
+            /*terrace message*/
+            confirmBox.find(".message").text(msg);
+            /*function*/
+            // Hiding
+            confirmBox.find(".yes").unbind().click(
+                function () {
+                    confirmBox.hide();
+                    window.scrollTo({ top: 892, behavior: "smooth" });
+                })
 
-     confirmBox.find(".yes").click(gfg);
-     confirmBox.show();
- }
-   </script>
-  </head>
+            confirmBox.find(".yes").click(gfg);
+            confirmBox.show();
+        }
+    </script>
+</head>
+
 <body>
-<section id="hbd">
-<!-- the first section -->
-<div class="main">
-  <div class="box">
+    <section id="hbd">
+        <!-- the first section -->
+        <div class="main">
+            <div class="box">
 
-    <h1>Happy Birthday</h1>
-  </div>
-<h2>ABCD</h2>
-<!-------->
-<div id="wish">
-<div class="message">Many many happy returns of the day &#128516; <br>Have a great birthday! </div>
-<button class="yes"> Thank you </button>
-</div>
-<a onclick="myFunc()">The Wish</a>
-</section>
-<!-- the second section -->
-<section id="time">
-  <!--the message-->
-  <div class="date" data-aos="zoom-out-up"  data-aos-delay="500" data-aos-duration="1000">16</div> <div class="date"> August</div>
+                <h1>Happy Birthday</h1>
+            </div>
+            <h2>ABCD</h2>
+            <!-------->
+            <div id="wish">
+                <div class="message">Many many happy returns of the day &#128516; <br>Have a great birthday! </div>
+                <button class="yes"> Thank you </button>
+            </div>
+            <a onclick="myFunc()">The Wish</a>
+    </section>
+    <!-- the second section -->
+    <section id="time">
+        <!--the message-->
+        <div class="date" data-aos="zoom-out-up" data-aos-delay="500" data-aos-duration="1000">16</div>
+        <div class="date"> August</div>
 
-  <div class="date" data-aos="zoom-out-down"  data-aos-delay="500" data-aos-duration="1000">2021</div>
+        <div class="date" data-aos="zoom-out-down" data-aos-delay="500" data-aos-duration="1000">2021</div>
 
-    <!-- from here -->
-  <div class="date_2" data-aos="flip-up"  data-aos-delay="500" data-aos-duration="1000">Congrats &#128515; </div>
+        <!-- from here -->
+        <div class="date_2" data-aos="flip-up" data-aos-delay="500" data-aos-duration="1000">Congrats &#128515; </div>
 
-  <div class="date_2" data-aos="flip-down"  data-aos-delay="500" data-aos-duration="1000">You have passed </div>
+        <div class="date_2" data-aos="flip-down" data-aos-delay="500" data-aos-duration="1000">You have passed </div>
 
-    <div class="date_2" data-aos="fade-up-right"  data-aos-delay="1200" data-aos-duration="1000">18 Springs!! &#128519;</div>
-    <!-- to here is a para -->
-<a class="up" href="#hbd">Back</a>
-</section>
-</div>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+        <div class="date_2" data-aos="fade-up-right" data-aos-delay="1200" data-aos-duration="1000">18 Springs!!
+            &#128519;</div>
+        <!-- to here is a para -->
+        <a class="up" href="#hbd">Back</a>
+    </section>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
